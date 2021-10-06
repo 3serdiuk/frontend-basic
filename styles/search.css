@@ -83,13 +83,11 @@ form {
         padding-top: 130px;
         padding-bottom: 140px;
         flex-direction: row;
-    }    
-
+    }
     .search h5 {
         font-size: 30px;
         margin-bottom: 30px;
     }
-
     .search p {
         margin-bottom: 75px;
     }
@@ -97,22 +95,18 @@ form {
         font-size: 17px;
         line-height: 25px;
     }
-
     .search-content {
         flex-direction: row;
         align-items: center;
         padding: 40px 50px;
     }
-
     .search-content input {
         min-width: 385px;
         width: 100%;
     }
-
     .search-box h6 {
         margin-bottom: 10px;
     }
-
     .search-box p {
         margin-bottom: 0;
     }
