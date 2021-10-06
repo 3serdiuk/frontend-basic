@@ -1,1 +1,174 @@
-sdf
+.wrap-customers {
+    background-color: var(--background);
+    width: 100%;
+}
+
+.customers {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.customers h4 {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 50px;
+    color: var(--quantity-black);
+    margin-bottom: 25px;
+}
+
+.customers p {
+    font-size: 12px;
+    line-height: 187.5%;
+    color: var(--secondary-black);
+    margin-bottom: 70px;
+}
+
+.card-slider {
+    display: flex;
+    margin: 0 -25px;
+    padding-bottom: 30px;
+}
+
+.card-slider p {
+    margin-bottom: 0;
+}
+
+.card {
+    max-width: 400px;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 25px;
+}
+
+.card p {
+    font-size: 10px;
+    line-height: 187.5%;
+    color: var(--secondary-black);
+    text-align: initial;
+}
+
+.is-active-card {
+    background-color: var(--white);
+    border-color: var(--primary-orange);
+}
+
+.card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.card-head div {
+    display: flex;
+}
+
+.avatar {
+    max-width: 50px;
+    width: 100%;
+}
+
+.customer-info {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.name {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--quantity-black);
+}
+
+.from {
+    font-family: Rubik;
+    font-size: 12px;
+    line-height: 30px;
+    color: var(--quantity-grey);
+}
+
+.rate {
+    font-family: Rubik;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--quantity-black);
+    padding-right: 18px;
+    position: relative;
+}
+
+.rate::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/star.svg);
+    width: 14px;
+    height: 14px;
+    right: 1px;
+    top: 6px;
+}
+
+.card-head img {
+    width: inherit;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.btn button {
+    background-color: var(--background);
+    color: var(--primary-orange);
+    border-radius: 100%;
+    padding: 20px;
+    border: 2px solid var(--primary-orange);
+}
+
+.btn button:hover {
+    background-color: var(--primary-orange);
+    color: var(--white);
+    border-radius: 100%;
+    padding: 20px;
+    border: 2px solid var(--primary-orange);
+}
+
+.btn button:first-of-type {
+    margin-right: 20px;
+}
+
+@media (min-width: 1200px) {
+    .customers {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+    .customers h4 {
+        font-size: 35px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .customers p {
+        font-size: 14px;
+    }
+    .name {
+        font-size: 18px;
+    }
+    .from {
+        font-size: 14px;
+    }
+    .card p {
+        font-size: 14px;
+    }
+    .rate {
+        font-size: 16px;
+    }
+}

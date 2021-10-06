@@ -11,7 +11,7 @@
     width: 100%;
 }
 
-.video-description div {
+.video-description h2 {
     font-weight: 700;
     font-size: 21px;
     line-height: 180.5%;
@@ -110,7 +110,7 @@
         padding-bottom: 85px;
     }
 
-    .video-description div {
+    .video-description h2 {
         font-size: 30px;
         margin-bottom: 12px;
     }
