@@ -1,0 +1,119 @@
+.search {
+    padding-top: 110px;
+    padding-bottom: 50px;
+    flex-direction: column;
+}
+
+.search h5 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 187.5%;
+    color: var(--bold-black);
+    margin-bottom: 15px;
+}
+
+.search p {
+    max-width: 545px;
+    width: 100%;
+    margin-bottom: 40px;
+    color: var(--secondary-black);
+}
+
+.search-box {
+    background-color: var(--bottom-black);
+    border-radius: 15px;
+}
+
+.search-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+
+.search-box h6 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: var(--white);
+    margin-bottom: 25px;
+}
+
+.search-box p {
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--white);
+    margin-bottom: 45px;
+}
+
+.search-content input {
+    padding: 14px 120px 14px 20px;
+    border-radius: 8px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 19px;
+    color: var(--grey);
+    background-color: var(--white);
+    max-width: 275px;
+    width: 100%;
+}
+
+form {
+    position: relative;
+    justify-content: center;
+}
+
+.search-content button {
+    color: var(--white);
+    border: 0;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: var(--primary-orange);
+    padding: 8px 17px;
+    position: absolute;
+    top: 8px;
+    right: 7px;
+}
+
+@media (min-width: 1200px) {
+    .search {
+        padding-top: 130px;
+        padding-bottom: 140px;
+        flex-direction: row;
+    }    
+
+    .search h5 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .search p {
+        margin-bottom: 75px;
+    }
+    .search-box p {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .search-content {
+        flex-direction: row;
+        align-items: center;
+        padding: 40px 50px;
+    }
+
+    .search-content input {
+        min-width: 385px;
+        width: 100%;
+    }
+
+    .search-box h6 {
+        margin-bottom: 10px;
+    }
+
+    .search-box p {
+        margin-bottom: 0;
+    }
+}
