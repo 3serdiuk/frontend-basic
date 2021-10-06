@@ -1,0 +1,53 @@
+.contacts {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+}
+
+@media (min-width: 1200px) {
+    .contacts {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: static;
+        z-index: 0;
+        opacity: 1;
+    }   
+}
+
+.contacts a {
+    font-size: 10px;
+    color: var(--header-black);
+    display: inline-block;
+    position: relative;
+}
+
+.contacts a:first-of-type {
+    margin-right: 50px;
+}
+
+.contacts a:last-of-type {
+    margin-left: 50px;
+}
+
+.contacts a:first-of-type::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/geo.svg);
+    background-repeat: no-repeat;
+    left: -15px;
+}
+
+.contacts a::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/phone.svg);
+    background-repeat: no-repeat;
+    left: -20px;
+    top: -2px;
+}

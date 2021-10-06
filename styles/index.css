@@ -1,0 +1,9 @@
+@import "./normalize.css";
+@import "./variables.css";
+@import "./general.css";
+@import "./contacts.css";
+@import "./header.css";
+@import "./breadcrumb.css";
+@import "./statistics.css";
+@import "./video.css";
+@import "./article.css";
