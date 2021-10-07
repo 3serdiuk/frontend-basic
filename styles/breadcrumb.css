@@ -7,6 +7,7 @@
 .breadcrumbs ul {
     display: flex;
     list-style-type: none;
+    align-items: center;
 }
 
 .breadcrumbs li {
@@ -24,6 +25,7 @@
     position: absolute;
     width: 10px;
     left: -15px;
+    top: 3px;
     color: var(--breadcrumbs-grey);
 }
 
