@@ -1,0 +1,226 @@
+.wrap-footer {
+    background-color: var(--bottom-black);
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    color: var(--white);
+}
+
+.top-filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.footer a {
+    display: inline-block;
+}
+
+.second-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.company {
+    max-width: 280px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.company a {
+    margin-bottom: 25px;
+}
+
+.company p, span {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+}
+
+.contact-info {
+    max-width: 210px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.contact-info a {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contact-info a:first-of-type {
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 14px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    max-width: 140px;
+    width: 100%;
+}
+
+.links div {
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.links-list a {
+    font-size: 16px;
+    line-height: 186.3%;
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.social-media a {
+    font-size: 13px;
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 100%;
+    padding: 11px 14px;
+    margin: 0 8px;
+}
+
+.separator {
+    width: 100%;
+    height: 0.8px;
+    background-color: #D2D2D2;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 13px;
+    color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .social-media {
+        padding-left: 20px;
+    }
+    .company {
+        padding-left: 10px;
+    }
+    .contact-info {
+        padding-left: 10px;
+    }
+    .links {
+        padding-left: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .social-media {
+        padding-left: 100px;
+        flex-direction: column;
+    }
+    .first-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: initial;
+        text-align: initial;
+        width: 50%;
+        padding-bottom: 20px;
+    }
+    .second-section {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: initial;
+        text-align: initial;
+        padding-top: 20px;
+        justify-content: initial;
+    }
+    .company {
+        padding-right: 40px;
+        padding-bottom: 0;
+    }
+    .links {
+        padding-top: 0;
+        padding-left: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .top-filter-section {
+        flex-direction: row;
+    }
+    .first-section {
+        padding-bottom: 0;
+    }
+    .second-section {
+        padding-top: 0;
+        justify-content: space-between;
+    }
+    .contact-info {
+        padding-left: 40px;
+        max-width: 280px;
+        width: 100%;
+    }
+    .social-media {
+        flex-direction: row;
+        align-items: flex-end;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .company {
+        max-width: 370px;
+        width: 100%;
+    }
+}

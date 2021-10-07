@@ -52,6 +52,7 @@
     height: 3px;
     background-color: var(--white);
     position: relative;
+    top: 15px;
 }
 
 .header span::before {
