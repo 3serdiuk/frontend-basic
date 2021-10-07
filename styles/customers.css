@@ -82,6 +82,21 @@
     padding-left: 20px;
 }
 
+.is-activ {
+    position: relative;
+}
+
+.is-activ::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--white);
+    left: 0;
+    top: 6px;
+}
+
 .name {
     font-family: Rubik;
     font-weight: 500;
