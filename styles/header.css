@@ -43,7 +43,6 @@
 
 .nav li:active {
     content: "";
-    position: absolute;
 }
 
 .header span {
