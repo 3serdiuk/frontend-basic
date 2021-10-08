@@ -5,6 +5,8 @@
     display: flex;
     justify-content: center;
     z-index: 0;
+    background-image: url(../images/form-background.png);
+    background-repeat: no-repeat;
 }
 
 .top-img {
@@ -46,7 +48,7 @@
 .form-btn button {
     font-size: 16px;
     color: var(--white);
-    background-color: var(--primary-orange);
+    background-color: var(--primary);
     border-radius: 10px;
     padding: 15px 50px;
     border: 0;
@@ -69,6 +71,7 @@
 
 .first-name {
     width: 100%;
+    margin-right: 6px;
 }
 
 label {
@@ -80,12 +83,12 @@ label {
 
 .last-name {
     width: 100%;
-    margin-top: 20px;
+    margin-left: 6px;
 }
 
 .name-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
@@ -141,11 +144,6 @@ textarea {
 }
 
 @media (min-width: 768px) {
-    .name-form {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
     .last-name {
         margin-top: 0;
     }

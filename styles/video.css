@@ -22,7 +22,7 @@
 .video-description p {
     font-size: 12px;
     line-height: 187.5%;
-    color: var(--secondary-black);
+    color: var(--secondary);
     margin-bottom: 58px;
 }
 
@@ -35,17 +35,19 @@
     position: relative;
     font-size: 14px;
     line-height: 187.5%;
-    color: var(--secondary-black);
+    color: var(--secondary);
     margin-bottom: 20px;
 }
 
 .video-description li::before {
     content: "";
     position: absolute;
-    width: 20px;
+    width: 22px;
     height: 20px;
     left: -30px;
+    top: 3px;
     background-image: url(../images/checkmark.svg);
+    background-repeat: no-repeat;
 }
 
 .iframe {

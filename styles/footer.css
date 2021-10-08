@@ -26,7 +26,6 @@
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    width: 50%;
     padding-bottom: 20px;
 }
 
@@ -35,7 +34,6 @@
 }
 
 .second-section {
-    width: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -46,7 +44,6 @@
 }
 
 .company {
-    max-width: 280px;
     width: 100%;
     padding-bottom: 20px;
 }
@@ -63,7 +60,6 @@
 }
 
 .contact-info {
-    max-width: 210px;
     width: 100%;
     padding-bottom: 20px;
 }
@@ -132,14 +128,20 @@
     color: var(--black);
     background-color: var(--white);
     border-radius: 100%;
-    padding: 11px 14px;
+    padding: 14px 15px;
     margin: 0 8px;
+    min-width: 41px;
+    text-align: center;
 }
 
 .separator {
     width: 100%;
-    height: 0.8px;
+    height: 1px;
     background-color: #D2D2D2;
+}
+
+ul {
+    padding: 0;
 }
 
 .copyright {
@@ -194,10 +196,14 @@
     .company {
         padding-right: 40px;
         padding-bottom: 0;
+        max-width: 280px;
     }
     .links {
         padding-top: 0;
         padding-left: 40px;
+    }
+    .contact-info {
+        max-width: 210px;
     }
 }
 

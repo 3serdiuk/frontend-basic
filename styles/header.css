@@ -1,5 +1,5 @@
 .wrap-header {
-    background-color: var(--primary-orange);
+    background-color: var(--primary);
     width: 100%;
 }
 
@@ -35,7 +35,7 @@
 
 .nav a:hover {
     padding: 10px 25px;
-    color: var(--primary-orange);
+    color: var(--primary);
     background-color: var(--white);
     border-radius: 6px;
 }
@@ -87,7 +87,7 @@
 .header button {
     background-color: transparent;
     border: 0;
-    padding: 20px 5px;
+    padding: 10px 15px;
     cursor: pointer;
 }
 
@@ -103,10 +103,10 @@
     border-radius: 100%;
     background-color: var(--white);
     left: 0;
-    top: 17px;
+    top: 15px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 910px) {
     .header span {
         position: absolute;
         z-index: -1;

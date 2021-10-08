@@ -1,5 +1,5 @@
 .wrap-customers {
-    background-color: var(--background);
+    background-color: var(--customers-background);
     width: 100%;
 }
 
@@ -12,18 +12,18 @@
 }
 
 .customers h4 {
-    font-family: Rubik;
+    font-family: "Rubik", sans-serif;
     font-weight: 500;
     font-size: 23px;
     line-height: 50px;
-    color: var(--quantity-black);
+    color: var(--title-black);
     margin-bottom: 25px;
 }
 
 .customers p {
     font-size: 12px;
     line-height: 187.5%;
-    color: var(--secondary-black);
+    color: var(--secondary);
     margin-bottom: 70px;
 }
 
@@ -46,18 +46,19 @@
     border-radius: 10px;
     padding: 30px;
     margin: 0 25px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: var(--white);
+    border-color: var(--primary);
 }
 
 .card p {
     font-size: 10px;
     line-height: 187.5%;
-    color: var(--secondary-black);
+    color: var(--secondary);
     text-align: initial;
-}
-
-.is-active-card {
-    background-color: var(--white);
-    border-color: var(--primary-orange);
 }
 
 .card-head {
@@ -72,8 +73,8 @@
 }
 
 .avatar {
-    max-width: 50px;
-    width: 100%;
+    width: 50px;
+    height: 50px;
 }
 
 .customer-info {
@@ -82,41 +83,26 @@
     padding-left: 20px;
 }
 
-.is-activ {
-    position: relative;
-}
-
-.is-activ::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    background-color: var(--white);
-    left: 0;
-    top: 6px;
-}
-
 .name {
-    font-family: Rubik;
+    font-family: "Rubik", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
-    color: var(--quantity-black);
+    color: var(--title-black);
 }
 
 .from {
-    font-family: Rubik;
+    font-family: "Rubik", sans-serif;
     font-size: 12px;
     line-height: 30px;
-    color: var(--quantity-grey);
+    color: var(--title-grey);
 }
 
 .rate {
-    font-family: Rubik;
+    font-family: "Rubik", sans-serif;
     font-size: 14px;
     line-height: 30px;
-    color: var(--quantity-black);
+    color: var(--title-black);
     padding-right: 18px;
     position: relative;
 }
@@ -143,19 +129,19 @@
 }
 
 .btn button {
-    background-color: var(--background);
-    color: var(--primary-orange);
+    background-color: var(--customers-background);
+    color: var(--primary);
     border-radius: 100%;
-    padding: 20px;
-    border: 2px solid var(--primary-orange);
+    padding: 16px 19px;
+    border: 2px solid var(--primary);
 }
 
 .btn button:hover {
-    background-color: var(--primary-orange);
+    background-color: var(--primary);
     color: var(--white);
     border-radius: 100%;
-    padding: 20px;
-    border: 2px solid var(--primary-orange);
+    padding: 16px 19px;
+    border: 2px solid var(--primary);
 }
 
 .btn button:first-of-type {

@@ -12,12 +12,13 @@
 }
 
 .section img {
-    max-width: 100wv !important;
     width: 100%;
+    font-size: 0;
 }
 
 .section-image {
-    margin: 0 -15px;
+    font-size: 0;
+    width: 100vw;
 }
 
 .section-description {
@@ -37,55 +38,66 @@
 .section-description p {
     font-size: 13px;
     line-height: 19px;
-    color: var(--common-p);
+    color: var(--common-paragraph);
     margin-bottom: 30px;
 }
 
 .section-description a {
     max-width: 177px;
     width: 100%;
-    background-color: var(--primary-orange);
+    background-color: var(--primary);
     padding: 13px 44px;
     color: var(--white);
     display: inline-block;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
+    .section-image {
+        width: 100%;
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 992px) {
     .article {
         padding-top: 85px;
     }
-
     .section {
         padding-bottom: 85px;
         flex-direction: row;
     }
-
     .section-description {
         padding-bottom: 0;
+        max-width: 540px;
+        padding-left: 20px;
     }
-
     .section-description h3 {
         font-size: 30px;
         line-height: 45px;
         margin-bottom: 43px;
     }
-
     .section-description p {
         font-size: 17px;
         line-height: 25px;
         margin-bottom: 45px;
     }
-
     .section:nth-child(even) {
         flex-direction: row-reverse;
     }
-
     .section img {
-        max-width: 496px;
         width: 100%;
     }
-
     .section-image {
         margin: 0;
+        max-width: 496px;
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .section-description {
+        padding-bottom: 0;
+        max-width: 570px;
+        width: 100%;
     }
 }

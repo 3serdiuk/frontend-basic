@@ -4,7 +4,7 @@
         opacity: 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
     .contacts {
         display: flex;
         justify-content: flex-end;
@@ -21,14 +21,11 @@
     color: var(--header-black);
     display: inline-block;
     position: relative;
-}
-
-.contacts a:first-of-type {
-    margin-right: 50px;
+    margin: 0 25px;
 }
 
 .contacts a:last-of-type {
-    margin-left: 50px;
+    margin-right: 0;
 }
 
 .contacts a:first-of-type::before {
